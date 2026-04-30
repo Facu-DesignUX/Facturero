@@ -1,0 +1,193 @@
+/* Reset y Configuracion de Pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    color: #000;
+}
+
+/* Contenedor Principal (Estilo Ventana) */
+.document-wrapper {
+    width: 210mm;
+    min-height: 297mm;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 40px;
+}
+
+/* Barra superior tipo ventana */
+.window-bar {
+    background-color: #d1d1d1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #bcbcbc;
+    gap: 8px;
+}
+
+.window-bar .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid #666;
+}
+
+.window-bar .title {
+    margin-left: 10px;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Contenido del Documento */
+.content {
+    padding: 40px 50px;
+}
+
+/* Cabecera de Marca */
+.brand-name {
+    font-size: 72pt;
+    font-weight: 900;
+    letter-spacing: -2pt;
+    margin-bottom: 30px;
+    line-height: 0.9;
+}
+
+/* Seccion de Metadatos (Header Info) */
+.meta-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    font-size: 9pt;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.meta-group div {
+    display: flex;
+}
+
+.meta-label {
+    width: 120px;
+}
+
+.meta-value {
+    font-weight: normal;
+}
+
+/* Texto de Proyecto (Azul) */
+.project-type {
+    color: #0000FF;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* Tabla de Servicios */
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.table-header {
+    border-bottom: 1px solid #000;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.service-item {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9pt;
+}
+
+.service-details {
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.service-price {
+    font-family: monospace;
+    font-size: 10pt;
+}
+
+/* Totales */
+.totals-section {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 9pt;
+    text-transform: uppercase;
+}
+
+.total-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.total-row.final {
+    margin-top: 5px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom-bar {
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    border-top: none;
+    padding-top: 10px;
+}
+
+.tag {
+    font-weight: bold;
+    margin-right: 5px;
+}
